@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 function FileInput({ name, value, initialPreview, onChange }) {
   const [preview, setPreview] = useState(initialPreview);
@@ -13,7 +13,7 @@ function FileInput({ name, value, initialPreview, onChange }) {
     const inputNode = inputRef.current;
     if (!inputNode) return;
 
-    inputNode.value = "";
+    inputNode.value = '';
     onChange(name, null);
   };
 
